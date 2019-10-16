@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate email</title>
+</head>
+<body>
+<script>
+    function checkPatterm(email) {
+         regex = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/
+        if(regex.test(email)){console.log('hop le')}
+        else(console.log('khong hop le'));
+    }
+    let email1 = 'a@gmail.com';
+    checkPatterm(email1);
+    let email2 = 'ab@yahoo.com';
+    checkPatterm(email2);
+        let email3 = '@gmail.com';
+        checkPatterm(email3);
+
+</script>
+</body>
+</html>
